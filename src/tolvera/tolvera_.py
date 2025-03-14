@@ -22,19 +22,19 @@ Example:
     # First, we import Tolvera and run() from tolvera.
     from tolvera import Tolvera, run
 
-    # Then, we define a main function which takes in keyword arguments 
+    # Then, we define a main function which takes in keyword arguments
     # (kwargs) from the command line.
     def main(**kwargs):
-        # Inside the main function, we initialise a Tolvera instance 
+        # Inside the main function, we initialise a Tolvera instance
         # with the given keyword arguments.
         tv = Tolvera(**kwargs)
 
         # We use the render() decorator to render the pixels.
-        # This function can be named anything. 
+        # This function can be named anything.
         # It will run in a loop until the user exits the program.
         @tv.render
         def _():
-            # render() must return Pixels. Often, these pixels will be 
+            # render() must return Pixels. Often, these pixels will be
             # the pixels of the Tolvera instance, accessed with tv.px.
             return tv.px
 
@@ -57,11 +57,12 @@ from .pixels import *
 from .utils import *
 from .vera import Vera
 
+
 class Tolvera:
     """Tolvera main class.
 
     Attributes:
-        `name` (str): Name of Tölvera instance. 
+        `name` (str): Name of Tölvera instance.
         `ctx` (TolveraContext): Shared TolveraContext.
         `speed` (float): Global timebase speed.
         `pn` (int): Number of particles.

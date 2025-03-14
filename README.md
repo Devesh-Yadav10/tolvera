@@ -41,6 +41,18 @@ Tölvera is [registered on PyPI](https://pypi.org/project/tolvera) and can be in
 ```sh
 pip install tolvera
 ```
+To maintain a consistent coding style, this project uses:
+
+Black – for automatic code formatting.
+isort – for sorting and organizing imports.
+
+Ensure you have black and isort installed. You can install them using:
+
+```sh
+pip install black isort
+```sh
+
+
 
 ## Develop
 
